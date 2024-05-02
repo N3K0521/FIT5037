@@ -10,4 +10,4 @@
 This repository contains materials and notes compiled during my coursework to assist in both understanding and application of network security principles.
 
 If need any help with the unit, please DM me :)
-如果需要科目辅导请联系我 =3=
+如果需要科目帮助请联系我 =3=
